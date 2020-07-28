@@ -1,5 +1,4 @@
 import math
-import json
 
 # option one
 # made by samuel villegas
@@ -60,8 +59,8 @@ def calTax():
     return tax / 100
 
 # calulate full price
-def calFullPrice(price: float):
-    return (price + calTax()) + flat_shipping
+def calFullPrice(price):
+    return (float(price) + calTax()) + flat_shipping
 
 # print data for each item in the json data
 for i in items:
